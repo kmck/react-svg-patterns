@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundImage renders a background image pattern 1`] = `
+<pattern
+  height={1}
+  id="test"
+  patternContentUnits="objectBoundingBox"
+  patternUnits="objectBoundingBox"
+  width={1}
+>
+  <image
+    height={1}
+    width={1}
+    x={0}
+    xlinkHref=""
+    y={0}
+  />
+</pattern>
+`;
+
+exports[`BackgroundImage renders a background image pattern with the specified src 1`] = `
+<pattern
+  height={1}
+  id="test"
+  patternContentUnits="objectBoundingBox"
+  patternUnits="objectBoundingBox"
+  width={1}
+>
+  <image
+    height={1}
+    width={1}
+    x={0}
+    xlinkHref="https://via.placeholder.com/150"
+    y={0}
+  />
+</pattern>
+`;

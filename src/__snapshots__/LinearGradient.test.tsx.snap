@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LineraGradient renders a linear gradient 1`] = `
+<linearGradient
+  id="test"
+  spreadMethod="pad"
+  x1={0.5}
+  x2={0.5}
+  y1={1}
+  y2={0}
+>
+  <stop
+    offset="0%"
+    stopColor="inherit"
+  />
+  <stop
+    offset="100%"
+    stopColor="inherit"
+  />
+</linearGradient>
+`;
+
+exports[`LineraGradient renders a linear gradient at an angle 1`] = `
+<linearGradient
+  id="test"
+  spreadMethod="pad"
+  x1={0.14644660940672627}
+  x2={0.8535533905932737}
+  y1={0.8535533905932737}
+  y2={0.1464466094067262}
+>
+  <stop
+    offset="0%"
+    stopColor="#fff"
+  />
+  <stop
+    offset="100%"
+    stopColor="#000"
+  />
+</linearGradient>
+`;
+
+exports[`LineraGradient renders a linear gradient using from/to 1`] = `
+<linearGradient
+  id="test"
+  spreadMethod="pad"
+  x1={0.5}
+  x2={0.5}
+  y1={1}
+  y2={0}
+>
+  <stop
+    offset="0%"
+    stopColor="#ff0000"
+  />
+  <stop
+    offset="100%"
+    stopColor="#0000ff"
+  />
+</linearGradient>
+`;
+
+exports[`LineraGradient renders a linear gradient using preprocessed stops 1`] = `
+<linearGradient
+  id="test"
+  spreadMethod="pad"
+  x1={0.5}
+  x2={0.5}
+  y1={1}
+  y2={0}
+>
+  <stop
+    offset="25%"
+    stopColor="#000"
+  />
+  <stop
+    offset="75%"
+    stopColor="#fff"
+  />
+</linearGradient>
+`;
+
+exports[`LineraGradient renders a linear gradient using unprocessed stops 1`] = `
+<linearGradient
+  id="test"
+  spreadMethod="pad"
+  x1={0.5}
+  x2={0.5}
+  y1={1}
+  y2={0}
+>
+  <stop
+    offset="0%"
+    stopColor="#ff0000"
+  />
+  <stop
+    offset="50%"
+    stopColor="#00ff00"
+  />
+  <stop
+    offset="100%"
+    stopColor="#0000ff"
+  />
+</linearGradient>
+`;
+
+exports[`LineraGradient renders a linear gradient with scale 1`] = `
+<linearGradient
+  id="test"
+  spreadMethod="pad"
+  x1={0.5}
+  x2={0.5}
+  y1={1.5}
+  y2={-0.5}
+>
+  <stop
+    offset="0%"
+    stopColor="#fff"
+  />
+  <stop
+    offset="100%"
+    stopColor="#000"
+  />
+</linearGradient>
+`;
+
+exports[`LineraGradient renders a linear gradient with spreadMethod 1`] = `
+Array [
+  <linearGradient
+    id="test1"
+    spreadMethod="pad"
+    x1={0.5}
+    x2={0.5}
+    y1={1}
+    y2={0}
+  >
+    <stop
+      offset="0%"
+      stopColor="#fff"
+    />
+    <stop
+      offset="100%"
+      stopColor="#000"
+    />
+  </linearGradient>,
+  <linearGradient
+    id="test2"
+    spreadMethod="reflect"
+    x1={0.5}
+    x2={0.5}
+    y1={1}
+    y2={0}
+  >
+    <stop
+      offset="0%"
+      stopColor="#fff"
+    />
+    <stop
+      offset="100%"
+      stopColor="#000"
+    />
+  </linearGradient>,
+  <linearGradient
+    id="test3"
+    spreadMethod="repeat"
+    x1={0.5}
+    x2={0.5}
+    y1={1}
+    y2={0}
+  >
+    <stop
+      offset="0%"
+      stopColor="#fff"
+    />
+    <stop
+      offset="100%"
+      stopColor="#000"
+    />
+  </linearGradient>,
+]
+`;

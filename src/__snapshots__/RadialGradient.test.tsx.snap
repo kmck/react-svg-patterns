@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LineraGradient renders a radial gradient 1`] = `
+<radialGradient
+  cx={0.5}
+  cy={0.5}
+  fx={0.5}
+  fy={0.5}
+  id="test"
+  r={0.5}
+  spreadMethod="pad"
+>
+  <stop
+    offset="0%"
+    stopColor="inherit"
+  />
+  <stop
+    offset="100%"
+    stopColor="inherit"
+  />
+</radialGradient>
+`;
+
+exports[`LineraGradient renders a radial gradient using from/to 1`] = `
+<radialGradient
+  cx={0.5}
+  cy={0.5}
+  fx={0.5}
+  fy={0.5}
+  id="test"
+  r={0.5}
+  spreadMethod="pad"
+>
+  <stop
+    offset="0%"
+    stopColor="#ff0000"
+  />
+  <stop
+    offset="100%"
+    stopColor="#0000ff"
+  />
+</radialGradient>
+`;
+
+exports[`LineraGradient renders a radial gradient using preprocessed stops 1`] = `
+<radialGradient
+  cx={0.5}
+  cy={0.5}
+  fx={0.5}
+  fy={0.5}
+  id="test"
+  r={0.5}
+  spreadMethod="pad"
+>
+  <stop
+    offset="25%"
+    stopColor="#000"
+  />
+  <stop
+    offset="75%"
+    stopColor="#fff"
+  />
+</radialGradient>
+`;
+
+exports[`LineraGradient renders a radial gradient using unprocessed stops 1`] = `
+<radialGradient
+  cx={0.5}
+  cy={0.5}
+  fx={0.5}
+  fy={0.5}
+  id="test"
+  r={0.5}
+  spreadMethod="pad"
+>
+  <stop
+    offset="0%"
+    stopColor="#ff0000"
+  />
+  <stop
+    offset="50%"
+    stopColor="#00ff00"
+  />
+  <stop
+    offset="100%"
+    stopColor="#0000ff"
+  />
+</radialGradient>
+`;
+
+exports[`LineraGradient renders a radial gradient with a center offset 1`] = `
+<radialGradient
+  cx={0.25}
+  cy={0.75}
+  fx={0.5}
+  fy={0.5}
+  id="test"
+  r={0.5}
+  spreadMethod="pad"
+>
+  <stop
+    offset="0%"
+    stopColor="#fff"
+  />
+  <stop
+    offset="100%"
+    stopColor="#000"
+  />
+</radialGradient>
+`;
+
+exports[`LineraGradient renders a radial gradient with a focus offset 1`] = `
+<radialGradient
+  cx={0.5}
+  cy={0.5}
+  fx={0.25}
+  fy={0.75}
+  id="test"
+  r={0.5}
+  spreadMethod="pad"
+>
+  <stop
+    offset="0%"
+    stopColor="#fff"
+  />
+  <stop
+    offset="100%"
+    stopColor="#000"
+  />
+</radialGradient>
+`;
+
+exports[`LineraGradient renders a radial gradient with a radius 1`] = `
+<radialGradient
+  cx={0.5}
+  cy={0.5}
+  fx={0.5}
+  fy={0.5}
+  id="test"
+  r={2}
+  spreadMethod="pad"
+>
+  <stop
+    offset="0%"
+    stopColor="#fff"
+  />
+  <stop
+    offset="100%"
+    stopColor="#000"
+  />
+</radialGradient>
+`;
+
+exports[`LineraGradient renders a radial gradient with spreadMethod 1`] = `
+Array [
+  <radialGradient
+    cx={0.5}
+    cy={0.5}
+    fx={0.5}
+    fy={0.5}
+    id="test1"
+    r={0.5}
+    spreadMethod="pad"
+  >
+    <stop
+      offset="0%"
+      stopColor="#fff"
+    />
+    <stop
+      offset="100%"
+      stopColor="#000"
+    />
+  </radialGradient>,
+  <radialGradient
+    cx={0.5}
+    cy={0.5}
+    fx={0.5}
+    fy={0.5}
+    id="test2"
+    r={0.5}
+    spreadMethod="reflect"
+  >
+    <stop
+      offset="0%"
+      stopColor="#fff"
+    />
+    <stop
+      offset="100%"
+      stopColor="#000"
+    />
+  </radialGradient>,
+  <radialGradient
+    cx={0.5}
+    cy={0.5}
+    fx={0.5}
+    fy={0.5}
+    id="test3"
+    r={0.5}
+    spreadMethod="repeat"
+  >
+    <stop
+      offset="0%"
+      stopColor="#fff"
+    />
+    <stop
+      offset="100%"
+      stopColor="#000"
+    />
+  </radialGradient>,
+]
+`;

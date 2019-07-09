@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomSvgPattern renders a custom SVG pattern 1`] = `
+<pattern
+  height={1}
+  id="test"
+  patternContentUnits="objectBoundingBox"
+  patternUnits="objectBoundingBox"
+  width={1}
+/>
+`;
+
+exports[`CustomSvgPattern renders a custom SVG pattern with a render prop 1`] = `
+<pattern
+  height={1}
+  id="test"
+  patternContentUnits="objectBoundingBox"
+  patternUnits="objectBoundingBox"
+  width={1}
+>
+  <g>
+    <rect
+      fill="#ff0"
+      height={1}
+      width={1}
+      x={0}
+      y={0}
+    />
+    <rect
+      fill="#f00"
+      height={0.5}
+      width={0.5}
+      x={0}
+      y={0}
+    />
+    <rect
+      fill="#f00"
+      height={0.5}
+      width={0.5}
+      x={0.5}
+      y={0.5}
+    />
+    <text>
+      test
+    </text>
+  </g>
+</pattern>
+`;
+
+exports[`CustomSvgPattern renders a custom SVG pattern with a single child 1`] = `
+<pattern
+  height={1}
+  id="test"
+  patternContentUnits="objectBoundingBox"
+  patternUnits="objectBoundingBox"
+  width={1}
+>
+  <rect
+    fill="#00f"
+    height={1}
+    width={1}
+    x={0}
+    y={0}
+  />
+</pattern>
+`;
+
+exports[`CustomSvgPattern renders a custom SVG pattern with multiple children 1`] = `
+<pattern
+  height={1}
+  id="test"
+  patternContentUnits="objectBoundingBox"
+  patternUnits="objectBoundingBox"
+  width={1}
+>
+  <rect
+    fill="#ff0"
+    height={1}
+    width={1}
+    x={0}
+    y={0}
+  />
+  <rect
+    fill="#f00"
+    height={0.5}
+    width={0.5}
+    x={0}
+    y={0}
+  />
+  <rect
+    fill="#f00"
+    height={0.5}
+    width={0.5}
+    x={0.5}
+    y={0.5}
+  />
+</pattern>
+`;
