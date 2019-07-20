@@ -1,6 +1,6 @@
 {
   "name": "react-svg-patterns",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create, manage, and use SVG patterns in your React components",
   "author": "kmck",
   "license": "ISC",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "hex-rgb": "^4.1.0",
+    "lodash": "^4.17.15",
     "rgb-hex": "^3.0.0"
   },
   "peerDependencies": {
@@ -52,7 +53,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-typescript2": "^0.21.2",
+    "rollup-plugin-typescript2": "^0.22.0",
     "typescript": "^3.5.2"
   },
   "files": [
