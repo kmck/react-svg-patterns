@@ -1,6 +1,6 @@
 {
   "name": "react-svg-patterns",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Create, manage, and use SVG patterns in your React components",
   "author": "kmck",
   "license": "ISC",
@@ -8,6 +8,7 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
@@ -23,7 +24,6 @@
   },
   "dependencies": {
     "hex-rgb": "^4.1.0",
-    "lodash": "^4.17.15",
     "rgb-hex": "^3.0.0"
   },
   "peerDependencies": {
@@ -32,29 +32,30 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.0",
+    "@babel/core": "^7.6.2",
     "@babel/plugin-proposal-class-properties": "^7.5.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.0",
-    "@babel/preset-env": "^7.5.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
-    "@babel/preset-typescript": "^7.3.3",
-    "@types/jest": "^24.0.15",
-    "@types/react": "^16.8.23",
-    "@types/react-dom": "^16.0.5",
-    "@types/react-test-renderer": "^16.8.2",
-    "gh-pages": "^2.0.1",
-    "jest": "^24.8.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-test-renderer": "^16.8.6",
-    "rollup": "^1.16.6",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/jest": "^24.0.18",
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.1",
+    "@types/react-test-renderer": "^16.9.0",
+    "gh-pages": "^2.1.1",
+    "jest": "^24.9.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-test-renderer": "^16.10.1",
+    "rollup": "^1.21.4",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-typescript2": "^0.22.0",
-    "typescript": "^3.5.2"
+    "rollup-plugin-typescript2": "^0.24.3",
+    "typescript": "^3.6.3"
   },
   "files": [
     "dist"

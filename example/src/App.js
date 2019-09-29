@@ -5,7 +5,10 @@ import React, {
 import styled, { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
-import { createManagedSvgPatternLibrary } from 'react-svg-patterns';
+import {
+  VERSION,
+  createManagedSvgPatternLibrary,
+} from 'react-svg-patterns';
 
 import DemoPatternEditor from './DemoPatternEditor';
 import GithubCorner from './GithubCorner';
@@ -63,10 +66,18 @@ const App = ({ className }) => {
             patternKey="demo"
             registerSvgPattern={registerSvgPattern}
           />
-          <footer>© 2019 <a href="https://mcknig.ht">Keith McKnight</a></footer>
+          <footer>
+            <p>
+              <code>
+                <a href="https://www.npmjs.com/package/react-svg-patterns" target="_blank">react-svg-patterns</a>
+                {`@${VERSION}`}
+              </code>
+            </p>
+            <p>© 2019 <a href="https://mcknig.ht" target="_blank">Keith McKnight</a></p>
+          </footer>
         </main>
         <aside>
-          <a href="https://github.com/kmck/react-svg-patterns">
+          <a href="https://github.com/kmck/react-svg-patterns" target="_blank">
             <GithubCorner backgroundFill={fill} />
           </a>
         </aside>
@@ -96,6 +107,10 @@ export default styled(App)`
     margin-bottom: 10px;
   }
 
+  code {
+    font-family: monospace;
+  }
+
   aside {
     position: fixed;
     top: 0;
@@ -112,5 +127,9 @@ export default styled(App)`
     font-size: 0.8rem;
     text-align: center;
     box-sizing: border-box;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 10px;
   }
 `;
