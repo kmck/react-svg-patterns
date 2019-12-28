@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/react-svg-patterns/static/js/main.7e23df9d.chunk.js",
-    "main.js.map": "/react-svg-patterns/static/js/main.7e23df9d.chunk.js.map",
+    "main.js": "/react-svg-patterns/static/js/main.3b703b42.chunk.js",
+    "main.js.map": "/react-svg-patterns/static/js/main.3b703b42.chunk.js.map",
     "runtime-main.js": "/react-svg-patterns/static/js/runtime-main.5c47a199.js",
     "runtime-main.js.map": "/react-svg-patterns/static/js/runtime-main.5c47a199.js.map",
-    "static/js/2.56eb5637.chunk.js": "/react-svg-patterns/static/js/2.56eb5637.chunk.js",
-    "static/js/2.56eb5637.chunk.js.map": "/react-svg-patterns/static/js/2.56eb5637.chunk.js.map",
+    "static/js/2.7a28fc8e.chunk.js": "/react-svg-patterns/static/js/2.7a28fc8e.chunk.js",
+    "static/js/2.7a28fc8e.chunk.js.map": "/react-svg-patterns/static/js/2.7a28fc8e.chunk.js.map",
     "index.html": "/react-svg-patterns/index.html",
-    "precache-manifest.a1542553bdaf0266e301fc06af6ab925.js": "/react-svg-patterns/precache-manifest.a1542553bdaf0266e301fc06af6ab925.js",
+    "precache-manifest.09759c0cce33814f9be719b0f7bf8069.js": "/react-svg-patterns/precache-manifest.09759c0cce33814f9be719b0f7bf8069.js",
     "service-worker.js": "/react-svg-patterns/service-worker.js"
   }
 }
