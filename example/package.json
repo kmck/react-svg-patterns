@@ -8,12 +8,12 @@
     "dompurify": "^2.0.3",
     "json5": "^2.1.0",
     "react": "link:../node_modules/react",
-    "react-ace": "^7.0.4",
+    "react-ace": "^8.1.0",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "^3.1.2",
     "react-svg-patterns": "link:..",
     "rehype-dom": "^3.0.0",
-    "styled-components": "^4.4.0",
+    "styled-components": "^5.0.1",
     "styled-reset": "^4.0.1"
   },
   "scripts": {

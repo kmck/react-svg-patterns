@@ -9,12 +9,11 @@ import styled from 'styled-components';
 import JSON5 from 'json5';
 import rehype from 'rehype-dom';
 
-import 'brace';
 import AceEditor from 'react-ace';
 
-import 'brace/mode/javascript';
-import 'brace/mode/svg';
-import 'brace/theme/eclipse';
+import 'ace-builds/src-noconflict/mode-javascript';
+import 'ace-builds/src-noconflict/mode-svg';
+import 'ace-builds/src-noconflict/theme-eclipse';
 
 import SvgPatternPreview from './SvgPatternPreview';
 
