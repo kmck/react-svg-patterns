@@ -163,3 +163,153 @@ Array [
   </radialGradient>,
 ]
 `;
+
+exports[`createManagedSvgPatternLibrary useSvgPattern renders with all fill types 1`] = `
+Array [
+  <svg
+    height={100}
+    viewBox="0 0 100 100"
+    width={100}
+  >
+    <rect
+      fill="url(#testManager-linear__test1)"
+      height={20}
+      width={100}
+      x={0}
+      y={0}
+    />
+    <rect
+      fill="url(#testManager-radial__test2)"
+      height={20}
+      width={100}
+      x={0}
+      y={20}
+    />
+    <rect
+      fill="url(#testManager-angular__test3)"
+      height={20}
+      width={100}
+      x={0}
+      y={40}
+    />
+    <rect
+      fill="url(#testManager-image__test4)"
+      height={20}
+      width={100}
+      x={0}
+      y={60}
+    />
+    <rect
+      fill="url(#testManager-custom__test5)"
+      height={20}
+      width={100}
+      x={0}
+      y={80}
+    />
+  </svg>,
+  <svg
+    style={
+      Object {
+        "bottom": 0,
+        "height": 1,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "fixed",
+        "right": 0,
+        "width": 1,
+        "zIndex": -1,
+      }
+    }
+  >
+    <linearGradient
+      id="testManager-linear__test1"
+      spreadMethod="pad"
+      x1={0.5}
+      x2={0.5}
+      y1={1}
+      y2={0}
+    >
+      <stop
+        offset="0%"
+        stopColor="#f00"
+      />
+      <stop
+        offset="100%"
+        stopColor="#00f"
+      />
+    </linearGradient>
+    <radialGradient
+      cx={0.5}
+      cy={0.5}
+      fx={0.5}
+      fy={0.5}
+      id="testManager-radial__test2"
+      r={0.5}
+      spreadMethod="pad"
+    >
+      <stop
+        offset="0%"
+        stopColor="#f00"
+      />
+      <stop
+        offset="100%"
+        stopColor="#00f"
+      />
+    </radialGradient>
+    <pattern
+      height={1}
+      id="testManager-angular__test3"
+      patternContentUnits="objectBoundingBox"
+      patternUnits="objectBoundingBox"
+      width={1}
+    >
+      <polygon
+        fill="#ff0000"
+        points="0.5,0.5 0.5,-0.5 1.2071067811865475,-0.20710678118654757 1.5,0.49999999999999994 1.2071067811865475,1.2071067811865475"
+      />
+      <polygon
+        fill="#aa0055"
+        points="0.5,0.5 1.5,0.49999999999999994 1.2071067811865475,1.2071067811865475 0.5000000000000001,1.5 -0.20710678118654746,1.2071067811865477"
+      />
+      <polygon
+        fill="#5500aa"
+        points="0.5,0.5 0.5000000000000001,1.5 -0.20710678118654746,1.2071067811865477 -0.5,0.5000000000000002 -0.20710678118654768,-0.20710678118654735"
+      />
+      <polygon
+        fill="#0000ff"
+        points="0.5,0.5 -0.5,0.5000000000000002 -0.20710678118654768,-0.20710678118654735 0.4999999999999998,-0.5"
+      />
+    </pattern>
+    <pattern
+      height={1}
+      id="testManager-image__test4"
+      patternContentUnits="objectBoundingBox"
+      patternUnits="objectBoundingBox"
+      width={1}
+    >
+      <image
+        height={1}
+        width={1}
+        x={0}
+        xlinkHref="https://via.placeholder.com/150"
+        y={0}
+      />
+    </pattern>
+    <pattern
+      height={1}
+      id="testManager-custom__test5"
+      patternContentUnits="objectBoundingBox"
+      patternUnits="objectBoundingBox"
+      width={1}
+    >
+      <rect
+        fill="#f00"
+        height={1}
+        width={1}
+        x={0}
+        y={0}
+      />
+    </pattern>
+  </svg>,
+]
+`;

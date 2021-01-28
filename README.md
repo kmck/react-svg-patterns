@@ -22,7 +22,7 @@ npm install --save react-svg-patterns
 ## Usage
 
 Import `createManagedSvgPatternLibrary` and use it to create a `ManagedSvgPatternLibrary` component
-and its accompanying `registerSvgPattern` function.
+and its accompanying `registerSvgPattern` function and `useSvgPattern` hook.
 
 ```jsx
 import { createManagedSvgPatternLibrary } from 'react-svg-patterns';
@@ -30,6 +30,7 @@ import { createManagedSvgPatternLibrary } from 'react-svg-patterns';
 const {
   ManagedSvgPatternLibrary,
   registerSvgPattern,
+  useSvgPattern,
 } = createManagedSvgPatternLibrary();
 ```
 
@@ -53,6 +54,28 @@ const YourSvgIcon = () => (
     <rect x={0} y={0} width={100} height={100} />
   </svg>
 );
+```
+
+**Note:** Calling `registerSvgPattern` mid-render can cause problems for React. If you are creating
+an SVG pattern inside a component during rendering, try `useSvgPattern` instead.
+
+```jsx
+const YourSvgIcon = () => {
+  const linearGradientFill = useSvgPattern('myGradient', 'linear', {
+    angle: 30,
+    stops: ['#f00', '#0f0', '#00f',],
+  });
+  return (
+    <svg
+      width={100}
+      height={100}
+      viewBox="0 0 100 100"
+      fill={linearGradientFill}
+    >
+      <rect x={0} y={0} width={100} height={100} />
+    </svg>
+  );
+};
 ```
 
 Add `ManagedSvgPatternLibrary` near the top of your component tree. This renders an SVG element
@@ -230,6 +253,7 @@ You can also supply a `SvgPatternManager` instance directly.
   `SvgPatternManager` instance
 * `getSvgPattern(key)`: gets the fill URL for the supplied key
 * `registerSvgPattern(key, type, params)`: registers an SVG pattern
+* `useSvgPattern(key, type, params)`: hook version of `registerSvgPattern`
 
 
 ### createSvgPatternManager([idPrefix])
@@ -249,6 +273,7 @@ A new `SvgPatternManager` instance is created with this `idPrefix`.
 * `getInstance()`: returns the `SvgPatternManager` instance
 * `getSvgPattern(key)`: gets the fill URL for the supplied key
 * `registerSvgPattern(key, type, params)`: registers an SVG pattern
+* `useSvgPattern(key, type, params)`: hook version of `registerSvgPattern`
 
 
 ## Tips and Tricks
@@ -311,6 +336,22 @@ There are a few work-arounds that may be helpful, depending on your needs:
     </svg>
   );
   ```
+
+### "Cannot update a component while rendering a different component"
+
+Registering an SVG pattern inside of a component introduces a render loop that surfaces as an error
+in newer versions of React:
+
+> Cannot update a component (`ManagedSvgPatternLibrary`) while rendering a different component
+> (`YourSvgIcon`). To locate the bad setState() call inside `YourSvgIcon`, follow the stack trace as
+> described in https://reactjs.org/link/setstate-in-render
+
+This happens when registering the pattern causes the `ManagedSvgPatternLibrary` to re-render while
+the parent of the component that registered the pattern is already in the middle rendering. Ouch.
+
+You can avoid this by registering your SVG patterns _outside_ React. If that is not an option
+because your pattern is dynamic or otherwise tied to the lifecycle of a component, you should call
+`registerSvgPattern` in an effect instead. This is effectively what the `useSvgPattern` hook does.
 
 
 ## Contributing

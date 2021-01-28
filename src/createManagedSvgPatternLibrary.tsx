@@ -6,15 +6,16 @@ import SvgPatternLibrary from './SvgPatternLibrary';
 import SvgPatternManager from './SvgPatternManager';
 
 interface Props {
-  noSvgWrapper?: boolean,
-};
+  noSvgWrapper?: boolean;
+}
 
 export default function createManagedSvgPatternLibrary(
   patternManagerOrId?: string | SvgPatternManager
 ) {
-  const patternManager = (patternManagerOrId as any) instanceof SvgPatternManager
-    ? patternManagerOrId as SvgPatternManager
-    : new SvgPatternManager(patternManagerOrId as string);
+  const patternManager =
+    (patternManagerOrId as any) instanceof SvgPatternManager
+      ? (patternManagerOrId as SvgPatternManager)
+      : new SvgPatternManager(patternManagerOrId as string);
   const ManagedSvgPatternLibrary = (props: Props) => {
     const [patterns, setPatterns] = React.useState(patternManager.getPatterns());
 
@@ -30,12 +31,7 @@ export default function createManagedSvgPatternLibrary(
       };
     }, []);
 
-    return (
-      <SvgPatternLibrary
-        patterns={patterns}
-        {...props}
-      />
-    );
+    return <SvgPatternLibrary patterns={patterns} {...props} />;
   };
 
   return {
@@ -45,6 +41,13 @@ export default function createManagedSvgPatternLibrary(
     },
     registerSvgPattern(key: string, type: PatternType, params: Object) {
       return patternManager.get(patternManager.add(key, type, params));
-    }
+    },
+    useSvgPattern(key: string, type: PatternType, params: Object) {
+      const [pattern, setPattern] = React.useState<string | undefined>(undefined);
+      React.useLayoutEffect(() => {
+        setPattern(patternManager.get(patternManager.add(key, type, params)));
+      }, [key, type, params]);
+      return pattern;
+    },
   };
 }

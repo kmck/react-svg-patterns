@@ -1,6 +1,6 @@
 {
   "name": "react-svg-patterns",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Create, manage, and use SVG patterns in your React components",
   "author": "kmck",
   "license": "ISC",

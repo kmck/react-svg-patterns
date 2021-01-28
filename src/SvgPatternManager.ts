@@ -42,7 +42,7 @@ export default class SvgPatternManager {
   public get = (key: string) => {
     const patternKey = sanitizeKey(key);
     const pattern = this.patterns.get(patternKey);
-    return pattern ? `url(#${pattern.id})`: null;
+    return pattern ? `url(#${pattern.id})`: undefined;
   };
 
   public has = (key: string) => {
