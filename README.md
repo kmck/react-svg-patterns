@@ -40,7 +40,7 @@ can use to reference the fill in your other SVGs.
 ```jsx
 const linearGradientFill = registerSvgPattern('myGradient', 'linear', {
   angle: 30,
-  stops: ['#f00', '#0f0', '#00f',],
+  stops: ['#f00', '#0f0', '#00f'],
 });
 // linearGradientFill == 'url(#svg-pattern-linear__myGradient)'
 
@@ -63,7 +63,7 @@ an SVG pattern inside a component during rendering, try `useSvgPattern` instead.
 const YourSvgIcon = () => {
   const linearGradientFill = useSvgPattern('myGradient', 'linear', {
     angle: 30,
-    stops: ['#f00', '#0f0', '#00f',],
+    stops: ['#f00', '#0f0', '#00f'],
   });
   return (
     <svg
