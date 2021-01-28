@@ -1,14 +1,8 @@
-import React, {
-  useCallback,
-  useState,
-} from 'react';
+import React, { useCallback, useState } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
-import {
-  VERSION,
-  createManagedSvgPatternLibrary,
-} from 'react-svg-patterns';
+import { VERSION, createManagedSvgPatternLibrary } from 'react-svg-patterns';
 
 import DemoPatternEditor from './DemoPatternEditor';
 import GithubCorner from './GithubCorner';
@@ -41,10 +35,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const {
-  ManagedSvgPatternLibrary,
-  registerSvgPattern,
-} = createManagedSvgPatternLibrary();
+const { ManagedSvgPatternLibrary, registerSvgPattern } = createManagedSvgPatternLibrary();
 
 const App = ({ className }) => {
   const [fill, setFill] = useState();
@@ -69,11 +60,18 @@ const App = ({ className }) => {
           <footer>
             <p>
               <code>
-                <a href="https://www.npmjs.com/package/react-svg-patterns" target="_blank">react-svg-patterns</a>
+                <a href="https://www.npmjs.com/package/react-svg-patterns" target="_blank">
+                  react-svg-patterns
+                </a>
                 {`@${VERSION}`}
               </code>
             </p>
-            <p>© 2019 <a href="https://mcknig.ht" target="_blank">Keith McKnight</a></p>
+            <p>
+              © 2019{`-${Math.max(2021, new Date().getFullYear())} `}
+              <a href="https://mcknig.ht" target="_blank">
+                Keith McKnight
+              </a>
+            </p>
           </footer>
         </main>
         <aside>
