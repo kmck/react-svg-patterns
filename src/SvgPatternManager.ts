@@ -7,7 +7,7 @@ import { sanitizeKey } from './utils';
 export default class SvgPatternManager {
   private idPrefix: string;
   private patterns: Map<string, SvgPatternData> = new Map();
-  private listeners: Set<Function> = new Set();
+  private listeners: Map<Symbol, Function> = new Map();
 
   public constructor(idPrefix = 'svg-pattern') {
     this.idPrefix = idPrefix;
@@ -20,12 +20,10 @@ export default class SvgPatternManager {
   }
 
   public subscribe = (listener: Function) => {
-    this.listeners.add(listener);
-    let isSubscribed = true;
+    const id = Symbol();
+    this.listeners.set(id, listener);
     return () => {
-      if (!isSubscribed) {
-        this.listeners.delete(listener);
-      }
+      this.listeners.delete(id);
     };
   };
 

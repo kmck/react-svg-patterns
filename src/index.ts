@@ -1,9 +1,7 @@
-import { version } from '../package.json';
-
 export * from './constants';
 export * from './utils';
 
-export { version as VERSION };
+export { default as VERSION } from './version';
 
 export { default as LinearGradient } from './LinearGradient';
 export { default as RadialGradient } from './RadialGradient';
