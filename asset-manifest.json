@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/react-svg-patterns/static/js/main.0444e0c4.chunk.js",
-    "main.js.map": "/react-svg-patterns/static/js/main.0444e0c4.chunk.js.map",
+    "main.js": "/react-svg-patterns/static/js/main.e081ddc5.chunk.js",
+    "main.js.map": "/react-svg-patterns/static/js/main.e081ddc5.chunk.js.map",
     "runtime-main.js": "/react-svg-patterns/static/js/runtime-main.415fdb67.js",
     "runtime-main.js.map": "/react-svg-patterns/static/js/runtime-main.415fdb67.js.map",
-    "static/js/2.326c43a0.chunk.js": "/react-svg-patterns/static/js/2.326c43a0.chunk.js",
-    "static/js/2.326c43a0.chunk.js.map": "/react-svg-patterns/static/js/2.326c43a0.chunk.js.map",
+    "static/js/2.07e97d61.chunk.js": "/react-svg-patterns/static/js/2.07e97d61.chunk.js",
+    "static/js/2.07e97d61.chunk.js.map": "/react-svg-patterns/static/js/2.07e97d61.chunk.js.map",
     "index.html": "/react-svg-patterns/index.html",
-    "static/js/2.326c43a0.chunk.js.LICENSE.txt": "/react-svg-patterns/static/js/2.326c43a0.chunk.js.LICENSE.txt"
+    "static/js/2.07e97d61.chunk.js.LICENSE.txt": "/react-svg-patterns/static/js/2.07e97d61.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.415fdb67.js",
-    "static/js/2.326c43a0.chunk.js",
-    "static/js/main.0444e0c4.chunk.js"
+    "static/js/2.07e97d61.chunk.js",
+    "static/js/main.e081ddc5.chunk.js"
   ]
 }
